@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 35px 0 20px hsl(220, 41%, 10%), 0 0 0 60px hsl(217, 54%, 10%);
+}
+
+.img-container {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    margin-top: 1.5625em;
+}
+
+.equi-img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.img-container:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background: url(images/icon-view.svg) hsl(178, 100%, 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-radius: 15px;
+}
+.img-container:hover:after {
+    opacity: 0.5;
+}
+
+h2 {
+    margin-bottom: -5px;
+    color: white;
+    font-family: Outfit;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.equili-a-tag {
+    width: 85%;
+    text-decoration: none;
+}
+
+.descriptive-text {
+    width: 85%;
+    float: left;
+}
+
+.descriptive-text > p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.25rem;
+    font-family: Outfit;
+    font-weight: 300;
+}
+
+.price-and-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.price {
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-family: Outfit;
+}
+
+.time {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+}
+
+.clock-img {
+    margin-right: 8px;
+}
+
+hr {
+    margin-top: 1rem;
+    width: 85%;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 1rem;
+}
+
+.creator > img {
+    width: 10%;
+    height: auto;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.creator > p {
+    color: hsl(215, 51%, 70%);;
+    font-family: Outfit;
+} 
+
+.creator > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.creator > p > a:hover {
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
+
+.seperator {
+    width: 15px;
+}
+
